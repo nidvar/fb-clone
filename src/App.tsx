@@ -1,10 +1,13 @@
-function App() {
+import Login from './components/Login'
 
-  return (
-    <>
-      <h1>FB-CLONE</h1>
-    </>
-  )
+function App() {
+    return (
+        <main>
+            <p>English (US)</p>
+            <h1>FB-CLONE</h1>
+            <Login />
+        </main>
+    )
 }
 
 export default App

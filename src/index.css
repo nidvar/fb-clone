@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 500px;
+    max-height: 100vh;
+    border: 1px solid black;
+    margin: auto;
+    padding: 15px;
+
+    text-align: center;
+}
+
+.my-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-login-form input {
+    width: 100%;
+}
+
+.my-login-footer {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media (min-width: 800px) {
+    main {
+        background-color: bisque;
+    }
+}
