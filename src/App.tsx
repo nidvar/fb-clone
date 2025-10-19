@@ -1,12 +1,14 @@
-import Login from './components/Login'
+import { Routes, Route } from "react-router-dom";
+
+import LoginPage from "./pages/LoginPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
     return (
-        <main>
-            <p>English (US)</p>
-            <h1>FB-CLONE</h1>
-            <Login />
-        </main>
+        <Routes>
+            <Route path='/' element={<LoginPage />}/>
+            <Route path='/home' element={<HomePage />}/>
+        </Routes>
     )
 }
 
